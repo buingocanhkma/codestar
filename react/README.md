@@ -2,14 +2,6 @@
 For this workshop clone this repo by running command:
 `git clone https://github.com/buingocanhkma/codestar.git`
 
-##### Install dependencies
-
-`yarn install`
-
-##### Run Snap Shot from the root directory
-
-`yarn start`
-
 ![](screenshot.png)
 
 ##### Build the image  
