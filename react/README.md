@@ -1,11 +1,6 @@
-## Example of React Web Application based on [Alison Quaglia application](https://github.com/hylobates-lar/color-test)
-
-### Summary
-This is a basic digital coloring book, created by Alison Quaglia. I encourage you to check out her other works, especially [coloring book with National parks](https://github.com/hylobates-lar/coloring_book_frontend)! It's awesome!!! 😍
-
 ##### Getting Started
 For this workshop clone this repo by running command:
-`git clone https://github.com/mashun4ek/color-test.git`
+`https://github.com/buingocanhkma/codestar.git`
 
 ##### Install dependencies
 
