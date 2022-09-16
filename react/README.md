@@ -1,6 +1,6 @@
 ##### Getting Started
 For this workshop clone this repo by running command:
-`https://github.com/buingocanhkma/codestar.git`
+`git clone https://github.com/buingocanhkma/codestar.git`
 
 ##### Install dependencies
 
