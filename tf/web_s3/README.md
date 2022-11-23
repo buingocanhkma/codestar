@@ -1,5 +1,5 @@
-# codestar lab
-* codebuild - lab for codebuild
-* ec2-bootstrap - lab for create new ec2 with bootstrap docker, awscli, webserver
-* react - dockerfile with react source code
-* tf - Terraform example code
+# Host a static website to s3 bucket
+* 1. Clone this code to your computer
+* 2. Update access key and secret key to terraform.tfvars file
+* 3. run terraform init/plan/apply to launch demo web
+
