@@ -1,5 +1,6 @@
-# codestar lab
-* codebuild - lab for codebuild
-* ec2-bootstrap - lab for create new ec2 with bootstrap docker, awscli, webserver
-* react - dockerfile with react source code
-* tf - Terraform example code
+# Creating a EC2 instance by using module
+* 1. Clone this code to your computer
+* 2. Access to path env/stag 
+* 3. Update your info for terraform.tfvars file
+* 4. Run terraform init/plan/apply in path env/stag
+
