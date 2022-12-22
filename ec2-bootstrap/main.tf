@@ -1,3 +1,28 @@
+######################## Providers ################################
+terraform {
+
+  required_providers {
+
+    aws = {
+      source  = "hashicorp/aws"
+      version = "4.28.0"
+
+    }
+  }
+
+}
+
+provider "aws" {
+  region  = "us-east-1"
+  profile = "default"
+
+  default_tags {
+    tags = {
+      App = "terraform_aws_rds_secrets_manager"
+    }
+  }
+}
+
 ########################## Create EC2 ###########################
 
 resource "aws_instance" "codestar-lab" {
@@ -65,20 +90,6 @@ resource "aws_instance" "codestar-lab" {
       sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-config-wizard 1 1 1 2 3 1 1 1 1 2 1 2 2 2 
       sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json -s
       
-      #update aws key
-      cd /home/ubuntu/
-      #echo "AWS_ACCESS_KEY_ID='AKIAQDV6LAORPA2ESIFD'">>env.sh
-      #echo "AWS_ACCESS_KEY_SECRET='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'">>env.sh
-      #echo "AWS_REGION='us-east-1'">>env.sh
-      #echo "AWS_OUTPUT='json'">>env.sh
-      touch env.sh
-      sudo chown ubuntu:ubuntu env.sh
-      echo "aws configure set aws_access_key_id AKIAQDV6LAORPA2ESIFD" >> /home/ubuntu/env.sh
-      echo "aws configure set aws_secret_access_key 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" >> /home/ubuntu/env.sh
-      echo "aws configure set region us-east-1" >> /home/ubuntu/env.sh
-      echo "aws configure set output json" >> /home/ubuntu/env.sh
-      chmod a+x /home/ubuntu/env.sh
-      /home/ubuntu/./env.sh
   EOF
  
   tags = {
